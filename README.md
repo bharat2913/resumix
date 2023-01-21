@@ -34,3 +34,6 @@ Resumix is a Resume builder website with a very user friendly interface. You jus
 5. Test Creds for login
     - Email: test@test.com
     - Pass: test123
+
+## Live Link
+[https://resumix.netlify.app](https://resumix.netlify.app)
