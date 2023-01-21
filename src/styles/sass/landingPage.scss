@@ -1,0 +1,183 @@
+.App {
+  padding: 1rem 5rem 0rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.landingPge_logo {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landingPge_heading {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.landingPge_hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .landingPge_img {
+    width: 45%;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .landingPge_mainText {
+    width: 45%;
+
+    div {
+      h5 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.landingPge_divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  div {
+    width: 70%;
+    border-top: 1px solid #b7b9b8;
+  }
+}
+
+.landingPge_btn {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin: 1rem 0;
+  a button {
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: #195190ff;
+    border-radius: 5px;
+  }
+}
+
+.landingPge_terms {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin: 1rem 0;
+  p {
+    font-size: 14px;
+    a {
+      text-decoration: none;
+      color: #f36236;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .App {
+    padding: 3rem 2rem 2rem;
+  }
+
+  .landingPge_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landingPge_heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .landingPge_hero {
+    display: block;
+
+    .landingPge_img {
+      width: 100%;
+    }
+
+    .landingPge_mainText {
+      width: 100%;
+
+      div {
+        h5 {
+          font-size: 16px;
+          font-weight: bold;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .landingPge_divider {
+    div {
+      width: 100%;
+    }
+  }
+
+  .landingPge_btn {
+    a button {
+      width: 100%;
+      padding: 5px 10px;
+    }
+  }
+
+  .landingPge_terms {
+    p {
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .App {
+    padding: 2rem 2rem 0rem;
+  }
+
+  .landingPge_logo {
+    img {
+      max-width: 150px;
+    }
+  }
+
+  .landingPge_heading {
+    font-size: 20px;
+  }
+
+  .landingPge_hero {
+    .landingPge_mainText {
+      div {
+        h5 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .landingPge_btn {
+    a {
+      width: 100%;
+    }
+    a button {
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+  }
+}

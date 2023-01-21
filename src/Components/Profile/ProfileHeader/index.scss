@@ -1,0 +1,112 @@
+// Header Styles
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.02);
+  position: absolute;
+  background: white;
+  z-index: 1;
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
+.header_logo {
+  padding: 10px 0;
+  width: 20%;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  // border-right: 2px solid #707070;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.header_logo img {
+  max-width: 100%;
+  //   width: 100px;
+  height: 30px;
+}
+
+.header_main {
+  // padding: 10px 0 10px 1rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_main .header_search {
+  position: relative;
+  margin-left: 3rem;
+}
+.header_main .header_search .back_arrow {
+  background-color: black;
+}
+.header_main .header_search svg {
+  // width: 17px;
+  // left: 10px;
+  // top: 10px;
+  // fill: white;
+  // margin-left: 5px;
+  // transform: rotate(90deg);
+}
+.go_to_builder_header {
+  background-color: black;
+}
+
+.header_main .header_search input {
+  background: #f8f8f8;
+  border-radius: 15px;
+  width: 200px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  padding: 5px 15px 5px 30px;
+}
+
+.header_profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.header_sidebar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  a {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .header_notification,
+  .header_help {
+    background: #f8f8f8;
+    border-radius: 100%;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .logout {
+    cursor: pointer;
+    background: #195190ff;
+    padding: 1rem;
+    height: 57px;
+
+    // img {
+    //   max-width: ;
+    // }
+  }
+}

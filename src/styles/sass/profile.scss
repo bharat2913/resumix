@@ -1,0 +1,182 @@
+.profile {
+  // font-family: 'Poppins', sans-serif;
+  background: #f7f7f7;
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
+.profile_main {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.profile_hero {
+  width: 78vw;
+  // height: 100%;
+  // padding-top: 90px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+
+.profile_hero_box {
+  position: relative;
+  background: rgb(255, 254, 252);
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 1rem 2.5rem;
+  margin-top: 4rem;
+  display: grid;
+}
+.profile_hero_box_container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+
+  label {
+    position: absolute;
+    left: 24rem;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  svg {
+    cursor: pointer;
+  }
+}
+.editBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  svg {
+    width: 20px;
+  }
+}
+.editBtn:hover {
+  opacity: 0.9;
+}
+
+.editingBtn {
+  color: #195190ff;
+  svg {
+    fill: #195190ff;
+  }
+}
+
+.saveBtn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  button {
+    background-color: #195190ff;
+    font-size: 14px;
+    padding: 5px 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+.profile_hero_img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  // justify-self: center;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.personal {
+  p {
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+.profile_hero_name,
+.profile_hero_email,
+.profile_hero_number,
+.profile_hero_address {
+  display: flex;
+  gap: 1rem;
+
+  input {
+    background: #eff1f5;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    padding: 10px 20px;
+    outline: none;
+  }
+}
+
+.profile_email,
+.profile_number,
+.profile_address {
+  margin-top: 2rem;
+  p {
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+.resetPassword {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  a,
+  div {
+    font-size: 14px;
+    color: #195190ff;
+    // color: #195190ffa3;
+    cursor: pointer;
+  }
+
+  a:hover,
+  div:hover {
+    color: #195190ffa3;
+    text-decoration: none;
+  }
+}
+
+.profile_page_loader {
+  width: 700px !important;
+  height: 300px !important;
+  margin-bottom: 10px;
+  visibility: visible;
+  height: 15px;
+  background: #ddd !important;
+}
+
+/* remove Number input button */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,43 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital&display=swap');
+
+@import 'styles/sass/partials/colors.scss';
+@import 'styles/sass/partials/text.scss';
+@import 'styles/sass/landing.scss';
+@import 'styles/sass/landingPage.scss';
+@import 'styles/sass/login.scss';
+@import 'styles/sass/signup.scss';
+@import 'styles/sass/profile.scss';
+@import 'styles/sass/resume.scss';
+@import 'styles/sass/builder.scss';
+@import 'Components/BuilderWrapper/BuilderHeader/BuilderHeader.scss';
+@import 'Components/BuilderWrapper/BuilderSubHeader/BuilderSubHeader.scss';
+@import 'Components/BuilderWrapper/BuilderEditor/BuilderEditor.scss';
+@import 'Components/BuilderWrapper/BuilderDocument/BuilderDocument.scss';
+@import 'Components/BlankTemplate/BlankTemplate.scss';
+@import 'Components/Templates/Template1/Template1.scss';
+@import 'styles/sass/chooseTemplate.scss';
+@import 'Components/Templates/Template13/Template13.scss';
+
+@import 'Components/Profile/ProfileHeader/index.scss';
+@import 'Components/Profile/ProfileSidebar/index.scss';
+
+@import 'styles/sass/profileDashboard.scss';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+}
+
+.fallback_loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .builder_loader {
+    position: relative;
+    top: 0;
+  }
+}

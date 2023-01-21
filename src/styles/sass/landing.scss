@@ -1,0 +1,185 @@
+body {
+	margin: 0;
+	font-family: 'Ubuntu';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	  monospace;
+  }
+  .nav-item{
+	  text-decoration: none;
+  }
+  
+  .nav-link{
+	  color: #54B9A5;
+	  text-decoration: none;
+	  font-size: 22px;
+	  margin-right: 14px;
+	  cursor: pointer;
+  }
+  .nav-link:hover{
+	  text-decoration: none;
+  }
+  .navMenuCls{
+	  display: flex;
+	  justify-content: flex-end;
+  }
+  
+  .greenBox{
+	  padding-left: 140px;
+	  padding-top: 40px;
+  }
+  
+  
+  .btnMenu{
+	  color: #54B9A5;
+	  border-radius: 6px;
+	  font-size: 20px;
+		  background: none;
+  }
+  
+  .btnMenuActive{
+	  border: 2px solid #54B9A5;
+	  color: #54B9A5;
+	  border-radius: 6px;
+		  background: none;
+	  font-size: 20px;
+  }
+  .btnMenuActive:focus, .btnMenuActive:hover{
+	  outline: none;
+		  box-shadow: none;
+  }
+  
+  .App{
+	  //background-image: url('/assets/images/bg1.jpg');
+	  background-size: cover;
+	  min-height: 100vh;
+  }
+  .displayTitle{
+	  color: #fff;
+	  font-size: 70px;
+	  padding-top: 10%;
+	  margin: 0px;
+  }
+  .designTextCls{
+	  text-align: center;
+	  transform: rotate(-45deg);
+  }
+  .logoCls{
+	background: #fff;
+    padding: 20px;
+    border-radius: 25px;
+  }
+  .subText{
+	  font-size: 30px;
+  }
+  .displayTime{
+	  font-size: 50px;
+	  color: #fff;
+	  margin-top: 150px;
+	  text-align: center;
+  }
+  .designBoxCls{
+	  border: 1px solid #fff;
+	  width: 200px;
+	  height: 200px;
+	  display: inline-block;
+	  padding: 40px;
+	  border-radius: 10px;
+	  text-align: left;
+	  transform: rotate(45deg);
+  }
+  .homeBannerBG{
+	  background-color: #3C4091;
+	  min-height: 50vh;
+  }
+  .navbar-toggler-icon{
+	  background: #fff;
+	  color: #54B9A5;
+	  padding-top: 5px;
+	  border: 1px solid #54B9A5;
+	  cursor: pointer;
+		  font-size: 30px;
+	  border-radius: 8px;
+  }
+  .navbar-toggler:focus{
+	  outline: none;
+	  border: none;
+  }
+  .aboutBox{
+	  height: 100px;
+	  box-shadow: 0px 31px 30px 1px hsla(206,5%,70%,.14);
+	  margin-bottom: 40px;
+	  border: 1px solid #e3e3e3;
+	  padding: 10px 20px;
+  }
+  .steps{
+	  font-size: 20px;
+  }
+  .card-quote{
+	  border: 1px solid #54B9A5;
+	  padding: 24px;
+	  color: #54B9A5;
+	  border-radius: 24px;
+  }
+  .img-quote{
+		  width: 72px;
+	  height: 72px;
+	  position: absolute;
+	  top: -32px;
+	  background-color: #fff;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+	  .App{
+		  min-height: 100vh;
+		  padding-bottom: 60px;
+	  }
+	  .greenBox{
+		  padding-left: 30px;
+		  margin-top: 30px;
+	  }
+	  .card-quote{
+		   margin-top: 40px;
+	  }
+	  .navbar-toggler-icon{
+		  cursor: pointer;
+	  }
+	  .redBackground{
+		  padding-top: 20px;
+	  }
+	  .navMenuCls{
+		  display: none;
+	  }	
+	  .displayTitle{
+		  font-size: 40px;
+	  }
+	  .designBoxCls{
+		  display: block;
+		  margin: auto;
+	  }
+	  .aboutBox{
+		  height: auto;
+	  }
+  }
+
+
+  .buttons {
+	  display: flex;
+	  gap: 20px;
+	  justify-content: center;
+	  color: white;
+	  margin-top: 2rem;
+
+	  a {
+		  color: thistle;
+		  background: seagreen;
+		  padding: 10px 20px;
+		  border-radius: 10px;
+		  text-decoration: none;
+	  }
+  }

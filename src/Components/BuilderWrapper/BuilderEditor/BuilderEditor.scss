@@ -1,0 +1,197 @@
+.wrapper {
+  // width: 100%;
+}
+.toolbar {
+  position: fixed;
+  left: 24.5%;
+  // top: 105px;
+  top: 120px;
+  z-index: 1000;
+  color: black !important;
+  opacity: 1 !important;
+}
+.toolbar_link_popup {
+  // box-shadow: 0px 0px 1px #BFBDBD !important;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.34) !important;
+  left: auto !important;
+  font-size: 10px !important;
+  right: 20px !important;
+  padding: 10px !important;
+  width: 160px !important;
+  height: 105px !important;
+}
+.toolbar_link_popup.toolbar_link_popup:first-child {
+  background: green;
+}
+.toolbar_link_popup label {
+  font-size: 9px !important;
+  margin-bottom: 0rem !important;
+}
+.toolbar_link_popup input {
+  border: 1px solid #bfb9b9 !important;
+  height: 20px !important;
+  margin-bottom: 10px !important;
+  padding: 0 5px !important;
+}
+.toolbar_link_popup label:first-child {
+  display: none !important;
+}
+// .toolbar_link_popup input:first-of-type {
+#linkTitle {
+  display: none !important;
+}
+.toolbar_link_popup input[type='checkbox'] {
+  width: 12px;
+  height: 12px !important;
+}
+.toolbar_link_popup span button {
+  width: 55px !important;
+  height: 20px !important;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.34);
+  opacity: 0.7;
+}
+.toolbar_link_popup span button:hover {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.34) !important;
+  opacity: 1;
+  // background: #7A7A7A;
+  background: black;
+  color: white;
+  border: none;
+  transition: all 0.2s;
+}
+.rdw-link-decorator-wrapper {
+  a {
+    cursor: pointer !important;
+    text-decoration: none;
+  }
+}
+.rdw-link-decorator-icon,
+.rdw-link-decorator-icon:hover {
+  // display: none !important;
+}
+.editor {
+  overflow: hidden !important;
+  border: 1px dashed transparent;
+}
+.editor:hover {
+  border: 1px dashed grey;
+  // background: #9191911a;
+}
+.editor .public-DraftStyleDefault-block {
+  padding-right: 1.25rem;
+}
+.editor div {
+  word-wrap: anywhere;
+}
+// .selected {
+//     border: 1px dashed grey;
+// }
+.academics {
+  width: 40%;
+  height: 250px;
+  background: beige;
+}
+
+.public-DraftStyleDefault-block {
+  margin: 5px 0 !important;
+}
+
+.atTop {
+  z-index: 1000;
+}
+
+.text_left {
+  text-align: left !important;
+}
+.text_center {
+  text-align: center !important;
+}
+.text_right {
+  text-align: right !important;
+}
+.text_justify {
+  text-align: justify !important;
+}
+
+.toolbarColorPicker {
+  position: relative;
+}
+.toolbarColorPickerPopup {
+  position: absolute;
+  left: -70px;
+  top: 40px;
+}
+.toolbarColorPickerIcon {
+  border: 1px solid #f1f1f1;
+  width: 27px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexbox-fix {
+  input {
+    font-size: 11px !important;
+  }
+  span {
+    top: 0px !important;
+  }
+}
+.moreColorsbtnWrapper {
+  position: relative;
+  inset: 0px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  height: 30px;
+  padding: 0 5px;
+  font-size: 11px;
+
+  .moreColorsbtn {
+    background: #f4f4f4;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .moreColorsbtn:hover {
+    background: #eaeaea;
+  }
+}
+.chrome-picker {
+  width: 245px !important;
+}
+
+.toolbar_emoji_popup {
+  height: 200px !important;
+  width: 230px !important;
+  overflow-x: hidden !important;
+
+  span:nth-child(118),
+  span:nth-child(119),
+  span:nth-child(120),
+  span:nth-child(121) {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .toolbar {
+    left: -74%;
+    top: -93px;
+    width: calc(-27px + 230vw);
+  }
+}
+
+@media only screen and (max-width: 394px) {
+  .toolbar {
+    left: -84.5%;
+    top: -142px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .toolbar {
+    left: -90.5%;
+    top: -185px;
+    width: calc(-27px + 242vw);
+  }
+}

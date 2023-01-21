@@ -1,0 +1,240 @@
+.dashboard_wrapper {
+  width: 80%;
+  padding: 5rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  //   align-items: center;
+}
+
+.recent_activity {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 1px solid #e6e6e6;
+
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.delete_modal {
+  padding: 1rem;
+  button {
+    width: 110px;
+  }
+}
+
+.recent_activity_row {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+  gap: 1rem;
+  font-weight: bold;
+  font-size: 14px;
+
+  .activity {
+    // cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    background: #195190ff;
+    border-radius: 5px;
+    padding: 5px 7px;
+    display: flex;
+    justify-content: start;
+    gap: 0.5rem;
+    font-size: 10px;
+    color: white;
+
+    .actions {
+      position: absolute;
+      display: flex;
+      justify-content: start;
+      gap: 5px;
+      left: 10px;
+      top: 5px;
+      transform: translateY(-130%);
+      transition: all 0.2s ease-in-out;
+
+      .actions_edit,
+      .actions_delete {
+        background-color: #eaeaea;
+        border-radius: 5px;
+        padding: 0px 1px 1px;
+        border: 1px solid #aaa;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      svg {
+        width: 20px;
+      }
+    }
+
+    img {
+      // border: 1px solid #d9d9d9;
+      border-radius: 5px;
+      max-width: 90px;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .activity_details {
+      font-weight: bold;
+
+      .activity_heading {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      span {
+        font-weight: normal;
+      }
+
+      .action_btn {
+        background-color: black;
+        border: 1px solid transparent;
+        padding: 0 5px;
+        border-radius: 5px;
+        margin: 5px 0;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        svg {
+          width: 16px;
+          margin-right: 5px;
+        }
+      }
+      .action_btn:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.activity:hover {
+  img {
+    border-color: #195190ff;
+  }
+  .actions {
+    transform: translateY(0%);
+  }
+}
+
+.actions_edit:hover,
+.actions_delete:hover {
+  opacity: 0.8;
+  border: 1px solid #195190ff !important;
+}
+
+.dashboard_row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  .total_counter {
+    width: 60%;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .total_counter_btn {
+      background-color: white;
+      border-radius: 5px;
+      width: 48%;
+      display: flex;
+      height: 140px;
+      justify-content: space-between;
+      padding: 1rem;
+      flex-direction: column;
+      box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+      font-size: 12px;
+      font-weight: bold;
+      border: 1px solid #e6e6e6;
+      .total {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+      }
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+          border: 1px solid;
+          border-radius: 100%;
+          padding: 8px;
+        }
+      }
+      .count {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        font-size: 14px;
+      }
+
+      svg {
+        width: 35px;
+      }
+    }
+  }
+  .create_new_actions {
+    width: 40%;
+    background: #43464b;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: white;
+    padding: 1rem;
+
+    h6 {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+      margin-right: 5px;
+    }
+  }
+
+  .create_new_actions_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 25px;
+    justify-content: space-evenly;
+
+    .create_new_action {
+      width: 45%;
+      height: 90px;
+      font-size: 9px;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      border-radius: 5px;
+      background: #195190ff;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      gap: 5px;
+      cursor: pointer;
+      opacity: 0.9;
+      transition: all 0.2s ease-in-out;
+
+      svg {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .create_new_action:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+}

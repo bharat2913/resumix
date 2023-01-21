@@ -1,0 +1,401 @@
+
+
+.template_4_page{
+    display: block;
+    height: 100%;
+}
+.template_4_hero_section{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.template_4_header {
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.template_4_subHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0rem;
+    padding: 0.1rem 2rem;
+    // border-bottom: 1px solid black;
+
+    svg {
+        width: 24px;
+        margin-right: 5px;
+    }
+}
+
+
+// Sidebar
+
+.Template_4_sidebar {
+    width: 30%;
+    padding-top: 2rem;
+    padding-right: 5mm;
+}
+
+
+.Template_4_divider_sidebar {
+    border: 1px solid #000;
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.Template_4_divider_main {
+    border: 1px solid #453B3D;
+    width: 10%;
+    margin: 0 0 0.5rem;
+    margin-left: 5px;
+}
+
+.template_4_sideline {
+    width: 10px;
+    margin-right: 15px;
+
+
+    .template_4_sideline_circle {
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        position: absolute;
+        top: 12%;
+    }
+
+    .template_4_sideline_line {
+        width: 1px;
+        height: 70%;
+        position: absolute;
+        top: 20%;
+        left: 2px;
+    }
+}
+
+
+.template_4_language_level {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    div {
+        width: 25px;
+        height: 8px;
+        background-color: #DCC9AF;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.description {
+    margin-bottom: 1rem;
+}
+
+.template_3_description_with_subsection {
+    display: block;
+    margin-bottom: 0;
+
+    .template_3_subsection_header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .template_3_subsection_main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.template_4_description {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+
+    .progressBarContainer_template_4 {
+        height: 8px;
+        width: 70px;
+        background-color: #666;
+        // opacity: 0.5;
+        // border-radius: 10px;
+    }
+    .progressBarCompleted {
+        height: 8px;
+        background-color: #453B3D;
+    }
+}
+
+.public-DraftEditor-content:focus {
+    background-color: #9191911a;
+    border: 1px #000 dashed !important;
+}
+
+// Section
+
+.sidebar_section {
+    padding: 2px;
+    border: 1px dashed transparent;
+}
+
+.sidebar_section:hover {
+    background-color: #9191911a;
+    border: 1px #000 dashed !important;
+}
+.sidebar_section:active {
+    background-color: #9191911a;
+    border: 1px #000 dashed !important;
+}
+.sidebar_section:focus {
+    background-color: #9191911a;
+    border: 1px #000 dashed !important;
+}
+
+.section_heading {
+    // border: none;
+    border: 1px dashed transparent;
+}
+.section_heading:focus-visible {
+    // border: none;
+    background-color: #9191911a !important;
+    border: 1px dashed grey !important;
+    outline: none;
+}
+.section_heading:hover {
+    border: 1px dashed grey !important;
+}
+.editing {
+    background-color: #9191911a;
+    border: 1px #000 dashed !important;
+}
+.textarea {
+    background: none !important;
+    border: 1px solid transparent !important;
+    line-height: inherit !important;
+    width: 100%;
+    transition: border .2s linear;
+    cursor: text;
+    min-height: 22px;
+}
+.public-DraftStyleDefault-ul {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+
+
+// Right Side
+
+.Template_4_main {
+    width: 70%;
+    padding-top: 2rem;
+}
+.block {
+    position: relative;
+}
+// .block:hover {
+//     .outerIconWrapper, .copyDelIconWrapper {
+//         display: flex;
+//     }
+// }
+// .block:hover .outerIconWrapper, .copyDelIconWrapper  {
+//         display: flex;
+// }
+
+.template_3_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.outerIconWrapper {
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    display: none;
+    z-index: 10;
+
+    span {
+        background: black;        // display: flex;
+        border-right: 1px solid white;
+        cursor: pointer;
+    }
+
+    svg {
+        max-width: 20px;
+        width: 20px;
+        fill: white;
+    }
+}
+.copyDelIconWrapper {
+    position: absolute;
+    left: -20px;
+    top: 5px;
+    display: none;
+    flex-direction: column;
+    z-index: 10;
+    
+    span {
+        cursor: pointer;
+        background: #b7b7b7;
+    }
+
+    svg {
+        max-width: 20px;
+        width: 20px;
+        // fill: white;
+        stroke: #000;
+    }
+}
+.copyDelIconWrapper span:first-child {
+    border-bottom: 1px solid white;    
+}
+.section {
+    padding: 2px;
+    border: 1px dashed transparent;
+}
+
+.section:hover {
+    background-color: #9191911a;
+    border: 1px #000 dashed !important;
+}
+.selected {
+    background-color: #9191911a;
+    border: 1px #000 dashed !important;
+}
+
+// .blankTemplate_main {
+//     padding-top: 1.5rem;
+// }
+
+
+.blankTemplate_header {
+    margin: 0 0 1.5rem 0;
+}
+
+
+// .deleteModal {
+//     width: 300px;
+//     height: 300px;
+//     background: green;
+//     display: none;
+//     position: absolute;
+//     z-index: 1000;
+    
+// }
+
+.react-confirm-alert-overlay {
+    background: #000000d9 !important;
+    // animation: react-confirm-alert-fadeIn 0.3s 0.1s forwards !important;
+    animation: react-confirm-alert-fadeIn 0.3s  forwards !important;
+}
+
+.custom-ui {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e9eaf4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.34);
+    animation: react-confirm-alert-fadeIn 0.3s  forwards !important;
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 14px;
+    }
+    button {
+        padding: 5px 10px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background: white;
+        opacity: 0.7;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.34);
+        cursor: pointer;
+    }
+    button:hover {
+        // background: #7A7A7A;
+        background: black;
+        color: white;
+        opacity: 1;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.34);
+        transition: all ease-in-out 0.2s;
+    }
+
+    .changeSkillLevelModal {
+        margin: 0 1rem;
+        width: 90%;
+        height: 100%;
+        padding-top: 2rem;
+
+        input {
+            outline: none;
+            max-width: 100px;
+            margin-bottom: 1rem
+        }
+        button {
+            margin-top: 1rem;
+        }
+
+        .changeSkillLevelModal_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .changeSkillLevelModal_close {
+                cursor: pointer;
+            }
+        }
+
+        .skillsModal{
+            margin-top: 1rem;
+            .progressBarContainer {
+                height: 10px;
+                width: 200px;
+                background-color: #dfe5dc;
+                // opacity: 0.5;
+                // border-radius: 10px;
+            }
+            .progressBarCompleted {
+                height: 10px;
+                width: 0px;
+                background-color: #CCD8C5;
+                // opacity: 1;
+                // border-radius: 10px;
+            }
+
+            .skill_inputFeild {
+                input {
+                    background: #f4f4f4;
+                    border: 1px solid #c4c4c4;
+                    border-radius: 4px;
+                    width: 40px;
+                    height: 25px;
+                    margin: 0;
+                }
+
+            }
+        }
+    }
+
+}
+.changeSkillLevelModal_wrapper {
+    height: 400px;
+}
