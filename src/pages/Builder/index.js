@@ -6059,20 +6059,20 @@ export default function Builder({ setUserLoggedIn, userData, userLoggedIn }) {
     },
   ];
 
-  useEffect(() => {
-    setTimeout(() => {
-      if (!userLoggedIn) {
-        localStorage.setItem('pageData', pageDocumentData);
-        loginPopup.current && (loginPopup.current.style.display = 'flex'); // modal visible
-        loginPopupBG.current && (loginPopupBG.current.style.display = 'flex'); // modal bg visible
-      }
-    }, 20000);
-    if (userLoggedIn) {
-      // login_Modal()
-      loginPopup.current && (loginPopup.current.style.display = 'none'); // modal visible
-      loginPopupBG.current && (loginPopupBG.current.style.display = 'none'); // modal bg visible
-    }
-  });
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     if (!userLoggedIn) {
+  //       localStorage.setItem('pageData', pageDocumentData);
+  //       loginPopup.current && (loginPopup.current.style.display = 'flex'); // modal visible
+  //       loginPopupBG.current && (loginPopupBG.current.style.display = 'flex'); // modal bg visible
+  //     }
+  //   }, 20000);
+  //   if (userLoggedIn) {
+  //     // login_Modal()
+  //     loginPopup.current && (loginPopup.current.style.display = 'none'); // modal visible
+  //     loginPopupBG.current && (loginPopupBG.current.style.display = 'none'); // modal bg visible
+  //   }
+  // });
 
   return (
     <div className='builder'>

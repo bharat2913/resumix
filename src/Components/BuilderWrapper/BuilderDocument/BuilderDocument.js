@@ -944,11 +944,8 @@ export default function BuilderDocument({
             className='document_save_div'
             onClick={() =>
               document_name !== ''
-                ? userLoggedIn
-                  ? (setUpdatedTextDataFun(),
+                ? (setUpdatedTextDataFun(),
                     setDownloadDropdown(!downloadDropdown))
-                  : ((loginPopup.current.style.display = 'flex'),
-                    (loginPopupBG.current.style.display = 'flex'))
                 : (setShowToastText('Enter Document Name'),
                   setShowSaveToast(true))
             }
@@ -973,11 +970,8 @@ export default function BuilderDocument({
             onClick={
               () =>
                 document_name !== ''
-                  ? userLoggedIn
-                    ? (setLoading(true),
+                  ? (setLoading(true),
                       savePageDataandShare(documentComponent.current))
-                    : ((loginPopup.current.style.display = 'flex'),
-                      (loginPopupBG.current.style.display = 'flex'))
                   : (setShowToastText('Enter Document Name'),
                     setShowSaveToast(true))
               // {
